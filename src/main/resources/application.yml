@@ -1,0 +1,17 @@
+netty:
+  tcp-port: 9999
+  boss-count: 1
+  worker-count: 2
+  keep-alive: false
+  backlog: 100
+  use-linux-epoll: false
+  check-buffer-lack: true
+
+# 网关配置
+gateway:
+  ssl:
+    open: true            # 是否开启ssl处理
+    auth-client: false    # 是否开启认证客户端（双向认证）
+    key-store-type: JKS   # 证书仓库类型
+    file-path: C:\Users\Administrator\sChat.jks  # 证书文件路径
+    password: sNetty
